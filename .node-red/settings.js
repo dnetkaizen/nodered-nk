@@ -20,7 +20,7 @@
 
 module.exports = {
     // the tcp port that the Node-RED web server is listening on
-    uiPort: process.env.PORT || 1880,
+    uiPort: process.env.PORT || 8880,
 
     // By default, the Node-RED UI accepts connections on all IPv4 interfaces.
     // To listen on all IPv6 addresses, set uiHost to "::",
@@ -107,6 +107,8 @@ module.exports = {
     // following property can be used to identify a directory of static content
     // that should be served at http://localhost:1880/.
     //httpStatic: '/home/nol/node-red-static/',
+    // httpStatic: './img/',
+    httpStatic: './img/',
 
     // The maximum size of HTTP request that will be accepted by the runtime api.
     // Default: 5mb
